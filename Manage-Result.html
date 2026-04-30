@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Manage Results</title>
+<link rel="stylesheet" href="CSS/bootstrap.min.css">
+<link href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f6fa;
+}
+
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  background: #1f2a44;
+  color: white;
+  position: fixed;
+}
+
+.sidebar h3 {
+  text-align: center;
+  padding: 15px;
+}
+
+.sidebar a {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.sidebar a:hover {
+  background: #2f3b5c;
+}
+
+
+.main {
+  margin-left: 220px;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 10px 20px;
+  border-bottom: 3px solid orange;
+}
+
+.menu-btn {
+  background: #0d6efd;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+
+.content {
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+select, button, input {
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  cursor: pointer;
+}
+
+.filter-btn {
+  background: #0d6efd;
+  color: white;
+  border: none;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  font-size: 13px;
+}
+
+th {
+  background: #f1f1f1;
+  text-align: left;
+}
+
+
+.view-btn {
+  background: #17a2b8;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 4px;
+}
+
+.upload-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 4px;
+}
+
+
+.search-box {
+  float: right;
+  margin-bottom: 10px;
+}
+
+.footer {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="sidebar shadow-sm" id="sidebar">
+            <div class="img-fluid p-3" style="background-color: rgb(143, 222, 222);">
+                <img src="IMAGES/suzalogo.png" alt="Logo" class="img-fluid rounded-circle" style="width: 70px; height: 70px; background: paleturquoise; padding: 5px;">
+            </div>
+            
+            <nav class="mt-3">
+                <a href="dashboard.html">📊 Dashboard</a>
+                <a href="manage-users.html">👥 Manage Users</a>
+                <a href="manage-instructors.html">👨‍🏫 Manage Instructors</a>
+                <a href="manage-students.html">🎓 Manage Students</a>
+                <a href="manage-courses.html">📚 Manage Courses</a>
+                <a href="manage-results.html">📑 Manage Results</a>
+                <a href="manage-allocations.html">📅 Manage Allocations</a>
+            </nav>
+        </div>
+
+
+<div class="main">
+
+  
+  <div class="top-bar">
+    <button class="menu-btn">☰</button>
+    <div>Admin Name 👤</div>
+  </div>
+
+  
+  <div class="content">
+    <div class="card">
+
+      <h3>Manage Results</h3>
+
+      
+      <div class="filters">
+        <select>
+          <option>2024</option>
+        </select>
+
+        <select>
+          <option>Semester 1</option>
+        </select>
+
+        <button class="filter-btn">Filter</button>
+      </div>
+
+    
+      <div class="search-box">
+        Search: <input type="text">
+      </div>
+
+      
+      <button>Export to Excel</button>
+
+      
+      <table>
+        <tr>
+          <th>Instructor</th>
+          <th>Course</th>
+          <th>Year</th>
+          <th>Semester</th>
+          <th>View Results</th>
+          <th>Upload Results</th>
+        </tr>
+
+        <tr>
+          <td>Dr. John Doe</td>
+          <td>CS101 - Introduction to Computer Science</td>
+          <td>2024</td>
+          <td>1</td>
+          <td><button class="view-btn">View Results</button></td>
+          <td><button class="upload-btn">Upload Results</button></td>
+        </tr>
+      </table>
+
+      <p>Showing 1 to 1 of 1 entries</p>
+
+      <div class="footer">
+        © 2025 The State University of Zanzibar | Version 1.0.2
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

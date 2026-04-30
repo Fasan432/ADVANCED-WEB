@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css"> 
+    <style>
+        
+      body {
+            background: linear-gradient(to right, #084e7d, #203a43, #2c5364);
+            height: 100vh;
+        }
+
+        .main-box {
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .left-box {
+            background: #1c1c1c;
+            color: white;
+            padding: 40px;
+        }
+
+        
+
+        .right-box {
+            background: white;
+            padding: 40px;
+        }
+
+        .logo {
+            width: 80px;
+            display: block;
+            margin: 0 auto 15px;
+        }  
+    </style>
+
+</head>
+<body class=" container d-flex justify-content-center align-items-center vh-100" >
+    <div class="container-fluid">
+        <div class="row shadow-lg w-100 main-box">
+            <div class="col-md-6 text-white p-3" style="background: #1c1c1c;">
+                <h1>Student Management System</h1>
+                <hr>
+                <p><input type="checkbox" checked> For Academic staff?<a href="#">login</a> here using employee number. </p>
+                <p> <input type="checkbox" checked>For Student <a href="#">login</a> here using registration number. </p>
+            </div>
+            <div class="col-md-6 bg-light p-3" >
+                
+                <img src="IMAGES/suzalogo.png" alt="login" class="img-fluid mb-3" style="width: 100px; height: 100px; display: block; margin: 0 auto;">
+            
+                <form action="#" method="POST">
+                    <input type="text" class="form-control" placeholder="username*" required><br>
+                    <input type="password" class="form-control" placeholder="password*" required><br>
+                    <p><input type="checkbox" class="form-check-input"> Remember me  <a href="forget-password.html" style="margin-left: 250px">Forgot Password?</a></p>
+                    <button type="submit" class="btn btn-primary w-100">SIGN IN</button>
+                </form>
+             </div>
+        </div>
+    </div>   
+</body>
+</html>
